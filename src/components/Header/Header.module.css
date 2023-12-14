@@ -1,0 +1,10 @@
+h1{
+    display: flex;
+    justify-content: center;
+    background: antiquewhite;
+    height: 4rem;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    font-family: cursive;
+}
