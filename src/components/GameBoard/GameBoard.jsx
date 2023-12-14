@@ -25,7 +25,8 @@ const GameBoard = () => {
     const resetHandler = () => {
         setBoard(startBoard);
         setWinner('');
-        setMove('X')
+        setMove('X');
+        setWinBlocks([]);
     };
     console.log(board);
 
@@ -42,7 +43,7 @@ const GameBoard = () => {
                 setWinner('Winner is ' + player);
                 setWinBlocks([a,b,c]);
 
-            }else if(!newBoard.includes("") && winner == "" ){
+            }else if(!newBoard.includes(" ") && winner == "" ){
                 setWinner("Tie")
             }
         }

@@ -1,7 +1,7 @@
 h1{
     display: flex;
     justify-content: center;
-    background: antiquewhite;
+    background: rgb(95, 76, 52);
     height: 4rem;
     flex-wrap: wrap;
     align-content: center;
