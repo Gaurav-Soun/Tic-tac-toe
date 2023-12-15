@@ -38,15 +38,18 @@ const GameBoard = () => {
         ];
 
         for (const condition of winConditions) {
+            let tie = true;
             const [a, b, c] = condition;
             if (newBoard[a] !== "" && newBoard[a] === newBoard[b] && newBoard[a] === newBoard[c]) {
                 setWinner('Winner is ' + player);
                 setWinBlocks([a,b,c]);
+                tie = false;
 
-            }else if(!newBoard.includes(" ") && winner == "" ){
-                setWinner("Tie")
             }
-        }
+            }
+         if(tie && !newBoard.includes(" ")){
+                setWinner("Tie")
+        };
     };
 
     return (
